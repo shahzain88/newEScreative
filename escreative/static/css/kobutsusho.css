@@ -1,0 +1,6 @@
+body > div.kobutsusho{
+    text-align: center;
+}
+body > div.kobutsusho > h4{
+    margin: var(--margin);
+}

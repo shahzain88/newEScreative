@@ -1,0 +1,7 @@
+/* style of all the content at home */
+body > div.home{
+    text-align: center;
+}
+body > div.home > h4{
+    margin: var(--margin);
+}

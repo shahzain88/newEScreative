@@ -1,0 +1,42 @@
+/* default style */
+:root{
+    --text-color:#242424;
+    --text-color-value:#009a3e;
+    --margin: 20px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* style all links in the site */
+a{
+    text-decoration: none;
+    color: var(--text-color-value);
+}
+a:active{
+    color: var(--text-color-value) ;
+}
+
+/* style the header to stic on top */
+body > header{
+    position: sticky;
+    top: 0;
+    background: #ffffffd0;
+}
+/* style banner on the company */
+body > header > img{
+    margin: var(--margin);
+}
+/* ligne the number and location at header */
+body > header > div{
+    display: inline-block;
+    position:fixed;
+    right: 0;
+    margin: var(--margin);
+    margin-top: 40px;
+}
+/* larger number sixe */
+body > header > div > a:nth-child(1) > span{
+    font-size: 30px;
+    margin: 0 var(--margin);
+}
