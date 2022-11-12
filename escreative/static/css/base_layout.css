@@ -1,42 +1,71 @@
 /* default style */
-:root{
-    --text-color:#242424;
-    --text-color-value:#009a3e;
+:root {
+    --text-color: #242424;
+    --text-color-value: #009a3e;
     --margin: 20px;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
+
 /* style all links in the site */
-a{
+a {
     text-decoration: none;
     color: var(--text-color-value);
 }
-a:active{
-    color: var(--text-color-value) ;
+
+a:active {
+    color: var(--text-color-value);
 }
 
 /* style the header to stic on top */
-body > header{
-    position: sticky;
-    top: 0;
+body>header {
+    padding: 90px;
     background: #ffffffd0;
+    text-align: center;
 }
+
 /* style banner on the company */
-body > header > img{
-    margin: var(--margin);
-}
-/* ligne the number and location at header */
-body > header > div{
+body>header>img {
+    position: absolute;
+    top: 10px;
+    left: 0;
     display: inline-block;
-    position:fixed;
-    right: 0;
-    margin: var(--margin);
-    margin-top: 40px;
+
 }
+
+/* ligne the number and location at header */
+body>header>div {
+    position: absolute;
+    right: 0;
+    top: 30px;
+
+}
+
 /* larger number sixe */
-body > header > div > a:nth-child(1) > span{
+body>header>div>a:nth-child(1)>span {
     font-size: 30px;
     margin: 0 var(--margin);
+}
+
+
+@media only screen and (max-width: 760px) {
+    body>header {
+        padding: 20%;
+    }
+
+    body>header>img {
+        margin: 0;
+        display: inline-block;
+        max-width: 100%;
+    }
+
+    body>header>div {
+        display: inline-block;
+        margin-top: 0;
+        position: static;
+    }
+
 }
