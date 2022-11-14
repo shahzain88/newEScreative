@@ -117,3 +117,42 @@ img {
         font-size: 11px
     }
 }
+
+/* 私たちについて */
+body>div>div.about-us {
+    margin: 100px 0;
+}
+
+body>div>div.about-us>h1 {
+    color: var(--text-color-value);
+    font-size: 35px;
+    margin: 40px;
+}
+
+body>div>div.about-us>h1>span:nth-child(2) {
+    color: #171c61;
+}
+
+/* 経験 */
+body>div>div>div.content-holder>h2 {
+    color: var(--text-color-value);
+}
+
+body>div>div>div.content-holder>div.card {
+    display: inline-block;
+    max-width: 250px;
+    border: 1px solid #c5c5c5;
+    margin: var(--margin);
+}
+
+body>div>div>div.content-holder>div>div:nth-child(1)>img {
+    max-width: 70%;
+}
+
+body>div>div>div.content-holder>div>div:nth-child(2)>p {
+    padding: var(--margin);
+}
+
+body>div>div>div.content-holder>div.see-more>p>a>span {
+    font-size: 24px;
+}
